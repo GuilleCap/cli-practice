@@ -29,7 +29,20 @@ console.log(targetCurrency);
 
 // If any of the required information is missing, display a meaningful message
 // and exit the program.
+if (amount === undefined || amount < 0) {
+console.error('Sorry, the amount must be greater than 0. Received', amount);
+process.exit();
+} 
 
+if (initialCurrency === undefined) {
+console.error('Sorry, the currency can not be undefined.Received', initialCurrency);
+process.exit();
+} 
+
+if (targetCurrency === undefined) {
+   console.error('Sorry, the target currency can not be undefined, you must choose one.Received', targetCurrency);
+   process.exit();
+}
 
 
 // --------------------------------------------------
