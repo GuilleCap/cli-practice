@@ -18,9 +18,7 @@ const amount = process.argv[2];
 const initialCurrency = process.argv[3];
 const targetCurrency = process.argv[4];
 
-console.log(amount);
-console.log(initialCurrency);
-console.log(targetCurrency);
+
 
 // --------------------------------------------------
 // Step 2: Validate user input
@@ -98,7 +96,7 @@ if (initialCurrency === 'USD' && targetCurrency === 'CAD') {
 	convertedAmount = amount * CAD;
 } 	
 
-console.log(convertedAmount);
+
 
 // --------------------------------------------------
 // Step 6: Display results
@@ -106,4 +104,13 @@ console.log(convertedAmount);
 // Finally we will display the result as part of a meaningful message.
 
 // This message should also include the original amount and currency information
-// supplied by the user.
+// supplied by the user
+
+console.log(`You submitted ${amount} in currency ${initialCurrency}`); 
+console.log(`This is equal to ${convertedAmount} ${targetCurrency}`);
+
+
+
+
+
+
