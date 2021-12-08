@@ -10,7 +10,7 @@
 
 
 
-const { isAmountValid } = require('./validator-functions.js');
+const { isAmountInvalid } = require('./validator-functions.js');
 
 
 // --------------------------------------------------
@@ -35,7 +35,7 @@ const targetCurrency = process.argv[4];
 
 
 
-if (isAmountValid(amount)){   
+if (isAmountInvalid(amount)){   
 console.error('Sorry, the amount must be greater than 0. Received', amount);
 process.exit();
 } 
