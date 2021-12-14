@@ -99,9 +99,9 @@ if (supportedCurrencies.includes(targetCurrency) === false) {
 let convertedAmount;
 
 if (initialCurrency === 'USD' && targetCurrency === 'CAD') {
-	convertedAmount = amount / CAD;
+	convertedAmount = amount / USD;
 } else if (initialCurrency === 'CAD' && targetCurrency === 'USD') {
-	convertedAmount = amount * CAD;
+	convertedAmount = amount * USD;
 } 	
 
 
